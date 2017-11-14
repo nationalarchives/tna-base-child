@@ -43,7 +43,7 @@ Log into your Travis CI account and navigate to The National Archives organisati
 
 This repository is configured to allow for easy integration with Travis CI (Continuous Integration).
 
-### 1.4.1 Grunt
+#### 1.4.1 Grunt
 
 Assuming that the [Grunt CLI](https://gruntjs.com/using-the-cli) has been installed follow the instructions on the [Grunt website](http://gruntjs.com/getting-started#working-with-an-existing-grunt-project).
 
