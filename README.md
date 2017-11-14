@@ -55,6 +55,10 @@ There are several Grunt tasks available to developers. View the Gruntfile.js for
 
 Type ```npm install``` to obtain Node dependencies
 
+Type ```npm install grunt-contrib-sass --save-dev``` to compile Sass to CSS
+
+Type ```npm install grunt-contrib-cssmin --save-dev``` to minify CSS
+
 #### 1.4.3 Obtaining dependencies via Composer
 
 Having followed the steps above you will be able to install dependencies by typing ```composer install``` at the Terminal.
