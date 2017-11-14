@@ -1,7 +1,5 @@
 <?php
 
-require dirname(__DIR__) . '/src/setThemeGlobals.php';
-
 class setThemeGlobalsTest extends PHPUnit_Framework_TestCase
 {
 

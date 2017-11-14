@@ -14,7 +14,9 @@ install:
   - npm install
 
 script:
-#  - phpunit tests/FunctionTest.php
+  - phpunit tests/IdentifyEnvronmentFromIPTest.php
+  - phpunit tests/setThemeGlobalsTest.php
+  - phpunit tests/FunctionsTest.php
 
 notifications:
   slack:
