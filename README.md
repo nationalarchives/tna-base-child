@@ -55,6 +55,8 @@ There are several Grunt tasks available to developers. View the Gruntfile.js for
 
 Type ```npm install``` to obtain Node dependencies
 
+If Sass or Cssmin doesn't install:
+
 Type ```npm install grunt-contrib-sass --save-dev``` to compile Sass to CSS
 
 Type ```npm install grunt-contrib-cssmin --save-dev``` to minify CSS
