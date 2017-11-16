@@ -1,19 +1,19 @@
-# tna-base child theme template
+# tna-base-child
 
 This should be used when creating new child themes for tna-base
 
-### 1.0 Clone Github repository 'tna-base-child-template' using SourceTree
+### 1.0 Clone Github repository 'tna-base-child' using SourceTree
 
 Click 'Remote' in SourceTree and you will be shown a full list of repositories you have access to. Then:
 
-* Create a folder called 'tna-base-child-template' in the Themes directory of your WordPress installation where 'tna-base' parent theme sits
-* Select the 'tna-base-child-template' repository in SourceTree and clone it to your newly created 'tna-base-child-template' directory
+* Create a folder called 'tna-base-child' in the Themes directory of your WordPress installation where 'tna-base' parent theme sits
+* Select the 'tna-base-child' repository in SourceTree and clone it to your newly created 'tna-base-child' directory
 
-### 1.1 Create your child theme from 'tna-base-child-template'
+### 1.1 Create your child theme from 'tna-base-child'
 
 * Create a folder in the Themes directory of your WordPress installation where 'tna-base' parent sits and give it a name
 * Use the naming convention, 'tna-child-...'
-* Copy the files inside 'tna-base-child-template' into your new child theme folder
+* Copy the files inside 'tna-base-child' into your new child theme folder
 
 ### 1.2 Add existing local repository (your newly created child theme) to Github using SourceTree
 
@@ -43,20 +43,30 @@ Log into your Travis CI account and navigate to The National Archives organisati
 
 This repository is configured to allow for easy integration with Travis CI (Continuous Integration).
 
-#### 1.4.1 Obtaining dependencies via Composer
+#### 1.4.1 Grunt
 
-Having followed the steps above you will be able to install dependencies by typing ```composer install``` at the Terminal.
+Assuming that the [Grunt CLI](https://gruntjs.com/using-the-cli) has been installed follow the instructions on the [Grunt website](http://gruntjs.com/getting-started#working-with-an-existing-grunt-project).
+
+There are several Grunt tasks available to developers. View the Gruntfile.js for a listing of included tasks
+
+* ```grunt``` will run a predefined set of tasks and result in an ongoing 'watch' tasks (if enabled) which responds to any changes to JavaScript and SASS files by compiling, concatenating and minifying the output.
 
 #### 1.4.2 Obtaining dependencies via NPM
 
 Type ```npm install``` to obtain Node dependencies
+
+If Sass or Cssmin doesn't install:
+
+Type ```npm install grunt-contrib-sass --save-dev``` to compile Sass to CSS
+
+Type ```npm install grunt-contrib-cssmin --save-dev``` to minify CSS
+
+#### 1.4.3 Obtaining dependencies via Composer
+
+Having followed the steps above you will be able to install dependencies by typing ```composer install``` at the Terminal.
 
 ### 1.5 Running PHPUnit
 
 Having followed the steps under 'Obtaining dependencies via Composer' type ```vendor/bin/phpunit -c phpunit.xml``` from within the tna-base directory to run Unit Tests for the project.
 
 Note: PhpStorm allows for PHPUnit integration - allowing your tests to be run automatically. Search the JetBrains website to find out how to configure this.
-
-### 1.6 Running Jasmine tests
-
-Having obtained the dependencies you can type ```grunt jasmine``` to run JavaScript tests

@@ -1,7 +1,5 @@
 <?php
 
-require dirname(__DIR__) . '/src/identifyEnvironmentFromIP.php';
-
 class ChildTemplateTest extends PHPUnit_Framework_TestCase
 {
     /**
