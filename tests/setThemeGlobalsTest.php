@@ -20,7 +20,7 @@ class setThemeGlobalsTest extends PHPUnit_Framework_TestCase
 
     public function testResultForLocalEnvironment()
     {
-        $result = setThemeGlobals('local');
+        $result = setThemeGlobals('internal');
         $this->assertEquals($GLOBALS['pre_path'], '');
         $this->assertEquals($GLOBALS['pre_crumbs']['Site home title'], '/');
     }
