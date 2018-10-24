@@ -16,4 +16,3 @@ function tna_child_styles()
 	wp_enqueue_style('tna-parent-styles');
 	wp_enqueue_style('tna-child-styles');
 }
-
