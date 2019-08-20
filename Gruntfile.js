@@ -19,7 +19,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'css/child-sass.css.min': ['css/child-sass.css']
+                    'css/child-sass.min.css': ['css/child-sass.css']
                 }
             }
         },
